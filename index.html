@@ -9,6 +9,12 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Public+Sans:wght@400..600&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dhruv Johari · Software Developer">
+  <meta property="og:description" content="Software developer at Commvault building data protection systems. BITS Pilani alumnus.">
+  <meta property="og:image" content="assets/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -21,7 +27,9 @@
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#experiments">Experiments</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
@@ -33,7 +41,7 @@
       <div class="wrap hero-grid">
         <div>
           <h1>Hi, I'm <span class="scribble">Dhruv</span>.</h1>
-          <p class="hero-lede">I build software that keeps people's most important data safe, and I enjoy the messy, careful work of making complex systems feel simple.</p>
+          <p class="hero-lede">I build data protection software at Commvault, and I enjoy the careful, messy work of making complex systems feel simple.</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#contact">Say hello</a>
             <a class="btn" href="assets/Dhruv_Johari_Resume.pdf" download>Download résumé</a>
@@ -46,7 +54,11 @@
             <text x="100" y="118" text-anchor="middle" font-family="Newsreader, Georgia, serif" font-size="72" font-style="italic" style="fill: var(--ink)">DJ</text>
             <path d="M58 138c26 8 58 8 84 0" fill="none" style="stroke: var(--accent)" stroke-width="3" stroke-linecap="round"/>
           </svg>
-          <p class="hero-note">Currently building data protection at Commvault.</p>
+          <aside class="now-card" aria-label="What I'm up to">
+            <p class="eyebrow">Currently</p>
+            <p>Building data protection tooling for Salesforce at Commvault.</p>
+            <p>Open to hard problems in distributed systems and data.</p>
+          </aside>
         </div>
       </div>
     </section>
@@ -65,7 +77,6 @@
           <li><span>Company</span><span>Commvault</span></li>
           <li><span>Based in</span><span>Pune, India</span></li>
           <li><span>Education</span><span>BITS Pilani Goa, CS</span></li>
-          <li><span>CGPA</span><span>8.80</span></li>
         </ul>
       </div>
     </section>
@@ -134,6 +145,29 @@
             </ul>
             <a class="project-link" href="https://github.com/Dhruvj21/Adaptive_DataCompression" target="_blank" rel="noopener">View on GitHub →</a>
           </article>
+</article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experiments">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Experiments</p>
+          <h2>Playing with <span class="scribble">AI</span></h2>
+          <p>Where I test ideas with AI tools: what they do well, where they break, and how they change the way I build.</p>
+        </div>
+        <div class="projects">
+          <article class="project experiment reveal">
+            <span class="project-num" aria-hidden="true">AI</span>
+            <h3>text2sql</h3>
+            <p class="project-date">Personal project · AI experiment</p>
+            <p>Ask a database a question in plain English and get SQL back. Before writing any query, it checks whether the question is ambiguous, such as a vague "top" or "recent", and asks you to choose what you meant. Generated SQL is validated and runs on a read-only connection.</p>
+            <ul class="tags" aria-label="Technologies">
+              <li>Python</li><li>SQLite</li><li>LLM APIs</li><li>Evaluation</li>
+            </ul>
+            <a class="project-link" href="https://github.com/Dhruvj21/text2sql" target="_blank" rel="noopener">View on GitHub →</a>
+          </article>
         </div>
       </div>
     </section>
@@ -164,6 +198,34 @@
             <div class="stat"><strong>1700+</strong><span>LeetCode contest rating</span></div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="section" id="hobbies">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <p class="eyebrow">Hobbies</p>
+          <h2>Off the <span class="scribble">clock</span></h2>
+          <p>What I do when I'm not at a keyboard.</p>
+        </div>
+        <ul class="hobbies">
+          <li class="hobby reveal">
+            <h3>Watching anime</h3>
+            <p>A good series on a slow weekend is hard to beat.</p>
+          </li>
+          <li class="hobby reveal">
+            <h3>Playing badminton</h3>
+            <p>A fast, competitive game I play for fun.</p>
+          </li>
+          <li class="hobby reveal">
+            <h3>Listening to music</h3>
+            <p>Usually something playing in the background while I work.</p>
+          </li>
+          <li class="hobby reveal">
+            <h3>Learning to swim</h3>
+            <p>A new skill, one lap at a time.</p>
+          </li>
+        </ul>
       </div>
     </section>
 

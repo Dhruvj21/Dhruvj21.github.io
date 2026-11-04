@@ -74,7 +74,7 @@ a:hover { color: var(--accent); }
 h1, h2, h3 {
   font-family: var(--display);
   font-weight: 600;
-  line-height: 1.2;
+  line-height: 1.3;
   letter-spacing: -0.01em;
   margin: 0;
 }
@@ -225,6 +225,23 @@ p { margin: 0 0 1em; }
 
 .hero-mark svg { width: 100%; height: auto; }
 
+.now-card {
+  margin: 1.5rem auto 0;
+  max-width: 300px;
+  padding: 18px 22px;
+  background: var(--paper-deep);
+  border-radius: 6px 20px 6px 20px;
+  transform: rotate(1.5deg);
+}
+
+.now-card .eyebrow { margin-bottom: 0.4rem; }
+
+.now-card p:not(.eyebrow) {
+  margin: 0 0 0.6rem;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+}
+
 .hero-note {
   font-family: var(--display);
   font-style: italic;
@@ -313,6 +330,12 @@ p { margin: 0 0 1em; }
   padding: 28px 28px 26px;
   background: var(--paper-deep);
   border-radius: 6px 22px 6px 22px;
+}
+
+/* Experiments read as a lab notebook: dashed outline, no fill */
+.experiment {
+  background: transparent;
+  border: 1.5px dashed var(--accent);
 }
 
 .project:nth-child(even) { border-radius: 22px 6px 22px 6px; }
@@ -415,6 +438,23 @@ p { margin: 0 0 1em; }
 
 .stat span { color: var(--ink-soft); font-size: 0.92rem; }
 
+/* ---------- Hobbies ---------- */
+.hobbies {
+  display: grid;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.hobby {
+  padding: 22px 24px;
+  border-top: 2px solid var(--sun);
+}
+
+.hobby h3 { margin-bottom: 0.4rem; }
+.hobby p { margin: 0; color: var(--ink-soft); }
+
 /* ---------- Contact ---------- */
 .contact {
   text-align: left;
@@ -423,7 +463,7 @@ p { margin: 0 0 1em; }
 .contact-lede {
   font-family: var(--display);
   font-size: clamp(1.8rem, 5vw, 2.8rem);
-  line-height: 1.2;
+  line-height: 1.3;
   max-width: 18ch;
   margin-bottom: 28px;
 }
@@ -468,6 +508,7 @@ p { margin: 0 0 1em; }
   .projects { grid-template-columns: 1fr 1fr; }
   .project:first-child { grid-column: 1 / -1; }
   .skills-grid { grid-template-columns: 1fr 1fr; }
+  .hobbies { grid-template-columns: 1fr 1fr; }
   .skills-grid .stats-block { grid-column: 1 / -1; }
 }
 
